@@ -312,16 +312,16 @@ The DELETE statement is used for data deletion one or more existing records in a
 ------
 
 ## Q13 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+
 ------
 
-
 ## Q14 Conduct research into a marketplace website (app) and answer the following parts:  a. List and describe the software used by the app.
-  ### b. Describe the hardware used to host the app.
-  ### c. Describe the interaction of technologies within the app
-  ### d. Describe the way data is structured within the app
-  ### e. Identify entities which must be tracked by the app
-  ### f. Identify the relationships and associations between the entities you have identified in part (e)
-  ### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
+ - b. Describe the hardware used to host the app.
+  - c. Describe the interaction of technologies within the app
+  - d. Describe the way data is structured within the app
+  - e. Identify entities which must be tracked by the app
+  - f. Identify the relationships and associations between the entities you have identified in part (e)
+  - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 
 ------
