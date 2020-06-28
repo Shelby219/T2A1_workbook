@@ -316,7 +316,7 @@ The DELETE statement is used for data deletion one or more existing records in a
 ------
 
 ## Q14 Conduct research into a marketplace website (app) and answer the following parts:  a. List and describe the software used by the app.
- - b. Describe the hardware used to host the app.
+  - b. Describe the hardware used to host the app.
   - c. Describe the interaction of technologies within the app
   - d. Describe the way data is structured within the app
   - e. Identify entities which must be tracked by the app
