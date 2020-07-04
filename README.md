@@ -309,6 +309,74 @@ The DELETE statement is used for data deletion one or more existing records in a
 
 ## Q12 Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O)
 
+Sorting algorithms are very important, more specifically, sorting efficiently is key as improves sorting improves the efficiency of other algorithms such as search algorithms that require the input data to be ordered.
+
+### Quick Sort Algorithm
+
+Quick sort is based on the Divide and Conquer method which is breaking the problem down into simpler versions of itself, the basis of this algorithm is in an array, a ‘pivot’ element is chosen, this element then subdivides the array elements by all the elements that are lesser than the pivot element, and all the elements that are greater than the pivot element and then moves them either side in relation to the pivot. The picking of this pivot element is done in different ways, can be the first element, the last element, a random element or the median element. The important factor is the pivot element itself is the closest middle integer in the array. What follows the aforementioned process is the algorithm then executes recursively the same steps on the new lesser and greater sub-arrays until all sub-arrays contain one element.
+
+The time complexity of this Algorithm for worst case O(n2), which is the larger the input data, the larger the steps. This can be the case when the selected pivot element is either one of the smaller or larger elements in the array, happening when the input data is already sorted or reverse sorted. This scenario can have a lesser change of occurring by choosing the pivot randomly or choosing the middle index. An example below is using random pivoting.
+
+            
+    partition(arr[], lo, hi) 
+        pivot = arr[hi]
+        i = lo     // place for swapping
+        for j := lo to hi – 1 do
+            if arr[j] <= pivot then
+                swap arr[i] with arr[j]
+                i = i + 1
+        swap arr[i] with arr[hi]
+        return i
+
+    partition_r(arr[], lo, hi)
+        r = Random Number from lo to hi
+        Swap arr[r] and arr[hi]
+        return partition(arr, lo, hi)
+
+    quicksort(arr[], lo, hi)
+        if lo < hi
+            p = partition_r(arr, lo, hi)
+            quicksort(arr, p-1, hi)
+            quicksort(arr, p+1, hi)
+    
+
+### Selection Sort Algorithm
+
+
+Selection Sort Algorithm is a simple algorithm that is an in-place executing comparison algorithm. It executes by dividing an array into two sub-arrays. One sub-array is the sorted array which is at the left end and the other sub-array is the unsorted array at the right end. Initially the sorted array is an empty array and the unsorted array is the whole of the main array. The algorithm then runs through the unsorted array finding the smallest element from it, then putting it at the beginning of the sorted sub-array. It iterates until all elements are in the sorted array, and each iteration starts at the beginning index of the unsorted array. 
+
+Whilst this is a simple style algorithm, it would not be the most efficient particular for large data input. As there are two loops, the worst case complexity is quadratic Ο(n2 ), which is the larger the input data, the larger the steps. This can occur if the we are wanting to sort the data in ascending order and the main array is already in descending order. An example of Ruby code for this Algorithm is below.
+
+
+        def selection_sort(arr)
+        n=arr.length
+        for i in 0...n 
+        min=i
+        for j in (i+1)...n
+            if arr[j] < arr[min]
+                temp = arr[j]
+                arr[j] = arr[min]
+                arr[min] = temp
+            end
+        end
+        end
+        return arr
+        end
+
+        p selection_sort([12,3,1,2,4,70,89,3,3])
+
+
+[Reference 1](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/)
+[Reference 2](https://en.wikipedia.org/wiki/Quicksort)
+[Reference 3](https://www.tutorialspoint.com/data_structures_algorithms/quick_sort_algorithm.htm)
+[Reference 4](https://www.geeksforgeeks.org/quick-sort/)
+[Reference 5](https://www.geeksforgeeks.org/when-does-the-worst-case-of-quicksort-occur/)
+[Reference 6](https://www.geeksforgeeks.org/quicksort-using-random-pivoting/)
+[Reference 7](https://www.geeksforgeeks.org/selection-sort/)
+[Reference 8](https://en.wikipedia.org/wiki/Selection_sort)
+[Reference 8](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
+
+
 ------
 
 ## Q13 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
@@ -335,13 +403,12 @@ Linear search is clearly a basic and simple algorithm; however, this also means 
         return count
         end
 
-        p count_val (2)
 
 
 
 ### Binary Search
 
-Binary search algorithm can be described as an effective algorithm for finding a particular item in a sorted array of items. It is executed by associating the target value with the center element in the aforementioned array. If they are equal, the target value is found. However, if they are not equal, and the target value is lesser than the center element, the larger half of the array is discarded. The same applies for if the target value is greater than the center element, the lesser half of the array is discarded. The search then continues to operate on the remaining half, and again repeating this process until the target value is eventually found.
+Binary search algorithm can be described as an effective Divide and Conquer algorithm for finding a particular item in a sorted array of items. It is executed by associating the target value with the center element in the aforementioned array. If they are equal, the target value is found. However, if they are not equal, and the target value is lesser than the center element, the larger half of the array is discarded. The same applies for if the target value is greater than the center element, the lesser half of the array is discarded. The search then continues to operate on the remaining half, and again repeating this process until the target value is eventually found. 
 
 A real-world comparison of a search like this could be using a dictionary to look up a word. Since it is a large book, usually you start with opening the book close to the center. Then if the word you are after is a lower letter or greater letter in the alphabet than the page you turned to, then you would search again in the lower or greater half of the dictionary. Repeating this process until you find the word you are searching. This method is much more efficient, then starting from A and checking every page of the dictionary until you reached the word you are searching. The steps taken doing the first process would be significantly less than the second way of searching the word.
 
