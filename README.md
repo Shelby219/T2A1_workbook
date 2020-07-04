@@ -9,7 +9,7 @@ The basis architecture of Rails is MVC: Model, View, Controller. These are the �
 
 ### Model
 
-The model handles the responsibility of interacting with the database and the rules and logic that enable modification of the data. In Ruby on Rails, the models interact with associated elements in the database, representing the corresponding data. 
+The model handles the responsibility of interacting with the database and the rules and logic that enable modification of the data. In Ruby on Rails, the models interact with associated elements in the database, representing the corresponding data.
 
 ### View
 
@@ -32,7 +32,7 @@ The controller is the binder that brings together the model and the view. The br
 
 PostgreSQL was born out of the POSTGRES project in 1986, led by Professor Michael Stonebreaker at the University of California at Berkeley, currently though it is continually developed and maintained by the PostgreSQL Global Development Group, which is a group of dedicated developers.
 
-Although one of the oldest open source database management system, PostgreSQL is one of the most advanced and runs on all major operating systems. This robust database has more than 30 years of active development, which has resulted in PostgreSQL earning a reputation of reliability, integrity and stability. PostgreSQL has many features which are designed to help application building by developers and to help the building of fault-tolerant environments by administrators which enables data integrity. 
+Although one of the oldest open source database management system, PostgreSQL is one of the most advanced and runs on all major operating systems. This robust database has more than 30 years of active development, which has resulted in PostgreSQL earning a reputation of reliability, integrity and stability. PostgreSQL has many features which are designed to help application building by developers and to help the building of fault-tolerant environments by administrators which enables data integrity.
 
 ### Key Advantages:
 
@@ -42,11 +42,11 @@ Although one of the oldest open source database management system, PostgreSQL is
 
 - Extensibility – highly customizable. For example, personal data types can be defined, customer functions created, and alternative programming languages can be used.
 
-- ACID compliant- i.e. Atomicity, Consistency, Isolation, Durability. This is a set of properties that guarantee validity and reliable processing even in the event of failure. An ACID compliant database management system protects the data despite any failures. 
+- ACID compliant- i.e. Atomicity, Consistency, Isolation, Durability. This is a set of properties that guarantee validity and reliable processing even in the event of failure. An ACID compliant database management system protects the data despite any failures.
 
 - SQL Compliance- PostgreSQL conforms to 160 out of the 179 features required for full core SQL:2016 standards, which is more than any other DBMS.
 
-- Diversity- PostgreSQL is diverse in many features including its extended functions such as DBlink which can enable database linking and PostGIS for geographic data storage. It also supports a diverse amount of index types which can enable faster data retrieval. 
+- Diversity- PostgreSQL is diverse in many features including its extended functions such as DBlink which can enable database linking and PostGIS for geographic data storage. It also supports a diverse amount of index types which can enable faster data retrieval.
 
 - Geographic objects- PostgreSQL supports geographic objects allowing for location queries in SQL.
 
@@ -81,29 +81,29 @@ Although one of the oldest open source database management system, PostgreSQL is
 
 ### What is Agile Methodology?
 
-Described as an iterative approach, Agile project management methodology is the breaking down of larger projects into smaller more manageable increments. These iterations, also called sprints, are consistent time intervals whereby at the end of each something of value is produced for the project. Then whatever is produced is presented forth to stakeholders or users for direct feedback. This means development and testing are parallel. 
+Described as an iterative approach, Agile project management methodology is the breaking down of larger projects into smaller more manageable increments. These iterations, also called sprints, are consistent time intervals whereby at the end of each something of value is produced for the project. Then whatever is produced is presented forth to stakeholders or users for direct feedback. This means development and testing are parallel.
 
 An example of the most popular Agile framework is Scrum. Described below is a summary of this framework and how it operates.
 
 ### Scrum
 
-A scrum is described as an iterative framework whereby teams can work together in product development. Usually applied in software development, but it has been used in other team avenues. A Scrum fundamental is the Empirical Process, which highlights that a task cannot be fully understood immediately, rather beginning the work and learning throughout the process is more beneficial. The members that create the basic Scrum team are the Product Owner, the Development Team and the Scrum Master. 
+A scrum is described as an iterative framework whereby teams can work together in product development. Usually applied in software development, but it has been used in other team avenues. A Scrum fundamental is the Empirical Process, which highlights that a task cannot be fully understood immediately, rather beginning the work and learning throughout the process is more beneficial. The members that create the basic Scrum team are the Product Owner, the Development Team and the Scrum Master.
 
 #### Product Owner
-The role of the Product Owner is to represent the business and other stakeholders and is in a sense the be ‘voice of the customer’. This involves having a clear understanding of the customer and create the vision of what the team is delivering to the customer.  The product owner takes responsibility for the prioritization of the work and adds them to the Product Backlog and keeping management of it. This role involves excellent communication skills and also negotiation and collaboration skills. It focuses on the business side of product development whereby they control the risks and achieve maximum value of the project. 
+The role of the Product Owner is to represent the business and other stakeholders and is in a sense the be ‘voice of the customer’. This involves having a clear understanding of the customer and create the vision of what the team is delivering to the customer.  The product owner takes responsibility for the prioritization of the work and adds them to the Product Backlog and keeping management of it. This role involves excellent communication skills and also negotiation and collaboration skills. It focuses on the business side of product development whereby they control the risks and achieve maximum value of the project.
 
 #### The Development Team
-The development team are the works who carry out the tasks in the sprints. This team does not solely consist of just engineers but can include all sorts of people that play a part in the development process such as designers and writers. This team needs to be able to be self-organizing and self-manage the workload to deliver the work in the sprint. To ensure the team is on track they meet during a sprint at a daily scrum or standup. This meeting provides an opportunity for members to convey any obstacles or blockers they might need help with whilst also highlighting any successes. 
+The development team are the works who carry out the tasks in the sprints. This team does not solely consist of just engineers but can include all sorts of people that play a part in the development process such as designers and writers. This team needs to be able to be self-organizing and self-manage the workload to deliver the work in the sprint. To ensure the team is on track they meet during a sprint at a daily scrum or standup. This meeting provides an opportunity for members to convey any obstacles or blockers they might need help with whilst also highlighting any successes.
 
 #### The Scrum Master
-The role of the Scrum Master is a facilitator of the team. Ensure the scrum framework is followed, and also can also be described as a servant-leader. They help or serve the product owner by helping maintain the backlog which ensures the work is properly communicated and understood. They help the development team by assisting with the self-organization in the team, assist with the determination of a “done” increment, help remove or avoid blockers and also overall coaching. 
+The role of the Scrum Master is a facilitator of the team. Ensure the scrum framework is followed, and also can also be described as a servant-leader. They help or serve the product owner by helping maintain the backlog which ensures the work is properly communicated and understood. They help the development team by assisting with the self-organization in the team, assist with the determination of a “done” increment, help remove or avoid blockers and also overall coaching.
 
 ### Overview of Workflow
 
-- Sprint- An iteration of a scrum is a sprint, the length is agreed and decided in advance 
+- Sprint- An iteration of a scrum is a sprint, the length is agreed and decided in advance
 - Spring Planning- This is held at the beginning of a sprint to examine the scope of work intended for the sprint, select the corresponding product backlog items to put into a prepared sprint backlog and agree on the sprint goal.
 - Daily Scrum- This meeting checks the daily work and allows the team to check for any blockers.
-- Sprint Review- Held at the end of the spring, this reviews all complete and incomplete work and presents the completed work to the stakeholders. 
+- Sprint Review- Held at the end of the spring, this reviews all complete and incomplete work and presents the completed work to the stakeholders.
 - Sprint Retrospective- This is for past sprint reflection and allows to identify any needed process improvements.
 
 [Reference 1](https://www.atlassian.com/agile )
@@ -130,9 +130,9 @@ Git is a free and open source version control system, it is designed for source 
 
 ### Git Feature Branch Workflow
 
-The principle of this workflow is that also feature development takes place on dedicated feature branches instead of solely on the master branch. This system enables developers to work on different features without the core codebase being touched. This idea of encapsulating features in dedicated branches permits pull requests, which are a way to alert others of changes to a branch. This is helpful for team collaboration on each feature branch. 
+The principle of this workflow is that also feature development takes place on dedicated feature branches instead of solely on the master branch. This system enables developers to work on different features without the core codebase being touched. This idea of encapsulating features in dedicated branches permits pull requests, which are a way to alert others of changes to a branch. This is helpful for team collaboration on each feature branch.
 
-#### Overview of this workflow: 
+#### Overview of this workflow:
 
 - A central repository houses the Master.
 - When a new feature is started, a new branch is created for this feature.
@@ -160,7 +160,7 @@ The principle of this workflow is that also feature development takes place on d
 
 ### Automatic Testing
 
-Automatic testing is a testing process whereby an automatic comparison is done of the actual outcome versus the expected outcome. This way of testing is effective for repetitive, difficult and/or time-consuming test cases. Automated testing tool is proficient to replay the pre-programmed test cases and compare the outcomes and generate reports. Some examples of testing tools are TestComplete and SilkTest. Some of the essential benefits of automated testing are that is can save time and money for the developer and company, it can significantly increase the coverage of the tests and it can increase test reusability and sharing. 
+Automatic testing is a testing process whereby an automatic comparison is done of the actual outcome versus the expected outcome. This way of testing is effective for repetitive, difficult and/or time-consuming test cases. Automated testing tool is proficient to replay the pre-programmed test cases and compare the outcomes and generate reports. Some examples of testing tools are TestComplete and SilkTest. Some of the essential benefits of automated testing are that is can save time and money for the developer and company, it can significantly increase the coverage of the tests and it can increase test reusability and sharing.
 
 #### Process
 
@@ -168,7 +168,7 @@ Automatic testing is a testing process whereby an automatic comparison is done o
 - Test Tool Selection
 - Planning, Design and Development
 - Test Execution
-- Maintenance 
+- Maintenance
 
 [Reference 1](https://www.guru99.com/automation-testing.html#1)
 [Reference 2](https://browsee.io/blog/automation-testing-explained/)
@@ -201,7 +201,7 @@ The relational database model is defined as an instinctive and candid way of dat
 
 ### Structure:
 
-#### Relational Database 
+#### Relational Database
 
 The database using the relational model. It is composed of multiple tables whereby these tables hold all the data.
 
@@ -215,7 +215,7 @@ This is each column in the table and are principle storage units for the table. 
 
 #### Tuple (Row (unordered))
 
-A tuple is a single row in a table, the data in the rows house single record. This record corresponds to the attributes of the table, and for each record (unique instance of data) in the tuple, it holds its own unique identifying mark which is called a key. The total number rows in the table is defined as the cardinality. 
+A tuple is a single row in a table, the data in the rows house single record. This record corresponds to the attributes of the table, and for each record (unique instance of data) in the tuple, it holds its own unique identifying mark which is called a key. The total number rows in the table is defined as the cardinality.
 
 #### Relation Schema
 
@@ -236,7 +236,7 @@ Is defined as the set of acceptable values an attribute allows for data input. T
 
 ## Q10 Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
-The relational integrity constraints of the relation database model consist of key constraints, domain constraints and referential integrity constraints. 
+The relational integrity constraints of the relation database model consist of key constraints, domain constraints and referential integrity constraints.
 
 #### Key Constraints (entity constraints)
 
@@ -244,7 +244,7 @@ In all relational databases, there need to be at least one set of attributes (co
 
 #### Domain Constraints
 
-These controls are attribute associated. It defines the eligible data valid for input in the columns. These are predefined values. For example, in a date defined attribute, the eligible data for that column is a date, therefore a string would not be acceptable. Domain integrity does permit a null placeholder in an attribute, however this is not representative of a value, it is just a placeholder. 
+These controls are attribute associated. It defines the eligible data valid for input in the columns. These are predefined values. For example, in a date defined attribute, the eligible data for that column is a date, therefore a string would not be acceptable. Domain integrity does permit a null placeholder in an attribute, however this is not representative of a value, it is just a placeholder.
 
 #### Referential integrity constraints
 
@@ -272,9 +272,9 @@ The SELECT statement in SQL is used for data retrieval in a singular relations o
 
 ### INSERT
 
-The INSERT statement is used for adding singular or multiple records to a table. The basis of an insert statement is INSERT INTO then specifying the columns and values. It is important to note the number of columns in the table you are inserting to, the column name may not need to be specified, but the values in the statement must be in the correct order to match up with the columns they will insert into. Using the additional phrase VALUES enables multi row inserting. 
+The INSERT statement is used for adding singular or multiple records to a table. The basis of an insert statement is INSERT INTO then specifying the columns and values. It is important to note the number of columns in the table you are inserting to, the column name may not need to be specified, but the values in the statement must be in the correct order to match up with the columns they will insert into. Using the additional phrase VALUES enables multi row inserting.
 
-    Example: INSERT INTO Table_name (column1 [, column2, column3 ... ])   
+    Example: INSERT INTO Table_name (column1 [, column2, column3 ... ])
 
     INSERT INTO Table_name (column-a, [column-b, ...])
     VALUES ('value-1a', ['value-1b', ...]),
@@ -287,12 +287,12 @@ The UPDATE statement is used for data changing in singular or multiple records i
 
     Example: UPDATE Table_name
              SET column_name_1 = 1
-    
+
 
 
 ### DELETE
 
-The DELETE statement is used for data deletion one or more existing records in a table. When this statement is used alone, it will delete all records from a table, but used along with conditions this enables specificity of the rows for data deletion. An example of this is using the WHERE condition to make a deletion of rows from a table WHERE a column equals a certain value. 
+The DELETE statement is used for data deletion one or more existing records in a table. When this statement is used alone, it will delete all records from a table, but used along with conditions this enables specificity of the rows for data deletion. An example of this is using the WHERE condition to make a deletion of rows from a table WHERE a column equals a certain value.
 
     Example: DELETE FROM Table_name
             WHERE column_name =certain value;
@@ -312,6 +312,68 @@ The DELETE statement is used for data deletion one or more existing records in a
 ------
 
 ## Q13 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+
+
+### Linear Search
+
+Linear search algorithm is a method used on a collection of items to the perform the most basic type of searching algorithm. It is executed by navigating through an entire list from the start to the end, and along the way it individually checks each element to see if a match is found for the target value, or the entire list has been searched.
+
+An example of a Linear search algorithm:
+
+This is a method that checks each value in an array and counts the amount of times that value appears in the array.
+
+Linear search is clearly a basic and simple algorithm; however, this also means it is not the most optimal performing nor efficient algorithm. As shown in the example below, in order for this method to execute, the elements in the array need to be checked individually. This means that as the size of the array of elements grows, so does steps and time taken to check how many times the target is in the array. This results in the time complexity for this algorithm to be O(n) or linear time.
+
+        def check_target (target)
+        arr = [1, 2, 3, 5, 2, 8, 9, 2]
+        count=0
+        arr.each do |element|
+            if element == target
+            count +=1
+            end
+        end
+        return count
+        end
+
+        p count_val (2)
+
+
+
+### Binary Search
+
+Binary search algorithm can be described as an effective algorithm for finding a particular item in a sorted array of items. It is executed by associating the target value with the center element in the aforementioned array. If they are equal, the target value is found. However, if they are not equal, and the target value is lesser than the center element, the larger half of the array is discarded. The same applies for if the target value is greater than the center element, the lesser half of the array is discarded. The search then continues to operate on the remaining half, and again repeating this process until the target value is eventually found.
+
+A real-world comparison of a search like this could be using a dictionary to look up a word. Since it is a large book, usually you start with opening the book close to the center. Then if the word you are after is a lower letter or greater letter in the alphabet than the page you turned to, then you would search again in the lower or greater half of the dictionary. Repeating this process until you find the word you are searching. This method is much more efficient, then starting from A and checking every page of the dictionary until you reached the word you are searching. The steps taken doing the first process would be significantly less than the second way of searching the word.
+
+The time complexity of Binary Search is logarithmic time O(log n). Logarithmic growth means it is being divided. So, in the case of Binary Search it is log base 2 of the array collection. Binary Search is highly efficient as the number of steps to the size of the input collection ratio does decrease when the input collection increases.
+
+To summarize, it is clear Binary Search is more efficient in performance time compared to Linear Search as shown in the complexity. Some other notable comparisons are that Binary Search does require the input data to be sorted, whereas Linear does not. Binary Search data access is at random, whilst Linear access’ the data sequentially.
+
+
+    def binarysearch(arr, i)
+        low = 0
+        high= arr.length-1
+    while (low < high)
+        mid = (low + high)/2
+        if arr[mid] < i
+        low = mid + 1
+        elsif arr[mid] > i
+        high = mid - 1
+        else
+        return mid
+        end
+    end
+    end
+
+    puts binarysearch([1,3,12,34,35,46,91,108], 91)
+
+
+[Reference 1](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+[Reference 2](https://www.hackerearth.com/practice/algorithms/searching/linear-search/tutorial/)
+[Reference 3](https://en.wikipedia.org/wiki/Linear_search)
+[Reference 4](https://medium.com/karuna-sehgal/an-simplified-explanation-of-linear-search-5056942ba965)
+[Reference 5](https://towardsdatascience.com/a-guide-to-linear-search-and-binary-search-on-arrays-data-structures-algorithms-2c23a74af28a)
+
 
 ------
 
