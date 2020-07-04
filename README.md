@@ -374,7 +374,7 @@ Whilst this is a simple style algorithm, it would not be the most efficient part
 [Reference 6](https://www.geeksforgeeks.org/quicksort-using-random-pivoting/)
 [Reference 7](https://www.geeksforgeeks.org/selection-sort/)
 [Reference 8](https://en.wikipedia.org/wiki/Selection_sort)
-[Reference 8](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
+[Reference 9](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
 
 
 ------
