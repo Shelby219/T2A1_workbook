@@ -177,15 +177,6 @@ Automatic testing is a testing process whereby an automatic comparison is done o
 
 ## Q6 Discuss and analyse requirements related to information system security and how they relate to the project
 
-[Reference 1](ttps://en.wikipedia.org/wiki/Information_security)
-[Reference 2](https://stepuptocrypt.blogspot.com/p/blog-page.html)
-[Reference 3](https://www.computersciencedegreehub.com/faq/what-is-information-systems-security/)
-[Reference 4](https://www.oaic.gov.au/privacy/the-privacy-act/rights-and-responsibilities/)
-[Reference 5](https://kirkpatrickprice.com/blog/why-every-company-needs-an-information-security-program/)
-[Reference 6](https://en.wikipedia.org/wiki/Information_security#Risk_management)
-[Reference 7](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
-[Reference 8](https://en.wikipedia.org/wiki/Information_security#Risk_management)
-
 ### Information Systems Security (INFOSEC)
 
 INFOSEC is exclusively the processes related to data security. The fundamentals of INFOSEC are confidentiality, integrity, and availability. These values are at the core of the safe accessibility of data by users. Infosec practice is in place to prevent, or at best, largely minimise the chances of unauthorized access to data by way of unlawful use, disclosure, disruption, deletion, corruption, modification, inspection, recoding or devaluation of the information. Referring to the core fundamentals of INFOSEC, below outlines to requirements in relation to them.
@@ -215,25 +206,20 @@ In information security, availability of data is imperative as any system would 
 
 - Threat Likelihood and Impact- Once all the steps previously mentioned are completed, it is important to determine in the case of a security breach, what would be the estimated potential and frequency of a security threat and also the estimated financial impact. Once an estimated value on a breach is made, then steps can be taken to budget for any possible breaches which enables business continuity. If any security breach happened without all possible planning beforehand it could bankrupt a business depending on the financial loss. Threat prioritisation and rating are also important; this is calculated using the likelihood and the impact. This can ensure more serious risks are handle first before less likely to occur breaches. 
 
+[Reference 1](https://en.wikipedia.org/wiki/Information_security)
+[Reference 2](https://stepuptocrypt.blogspot.com/p/blog-page.html)
+[Reference 3](https://www.computersciencedegreehub.com/faq/what-is-information-systems-security/)
+[Reference 4](https://www.oaic.gov.au/privacy/the-privacy-act/rights-and-responsibilities/)
+[Reference 5](https://kirkpatrickprice.com/blog/why-every-company-needs-an-information-security-program/)
+[Reference 6](https://en.wikipedia.org/wiki/Information_security#Risk_management)
+[Reference 7](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
+[Reference 8](https://en.wikipedia.org/wiki/Information_security#Risk_management)
 
 ------
 
 
 ## Q7 Discuss common methods of protecting information and data and how you would apply them to the project
 
-
-[Reference 1](https://cheapsslsecurity.com/blog/what-is-asymmetric-encryption-understand-with-simple-examples/)
-[Reference 2](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
-[Reference 3](https://www.cyber.gov.au/acsc/view-all-content/guidance/use-two-factor-authentication)
-[Reference 4](https://www.webopedia.com/TERM/S/strong_password.html)
-[Reference 5](https://en.wikipedia.org/wiki/Base64)
-[Reference 6](https://premium.wpmudev.org/blog/understanding-file-permissions/)
-[Reference 7](https://www.siteground.com/tutorials/cpanel/file-permissions/)
-[Reference 8](https://www.packetlabs.net/session-management/)
-[Reference 9](https://www.hack2secure.com/blogs/discover-what-session-management-is)
-[Reference 10](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
-[Reference 11](https://www.cloudflare.com/learning/ddos/glossary/web-application-firewall-waf/)
-[Reference 12](https://www.f5.com/services/resources/glossary/web-application-firewall)
 
 All of the methods mentioned below would be useful methods in a marketplace application, these methods have been highlighted for this reason. 
 
@@ -259,15 +245,24 @@ All of the methods mentioned below would be useful methods in a marketplace appl
 
 A WAF is a trusted method put in place to help protect a web application from various types of application breaches, such as cross-site-scripting and cookie poisoning and so on. It essentially is a shield between a web application and the internet that filters and blocks any malicious web traffic.  It operates either via hardware, software or cloud-based via a set of policies whereby the user’s information passing through the firewall before reaching the server. A WAF can bring benefits of speed and ease in its protection methods and a WAF is what would mitigate attacks such as DDos. 
 
+
+[Reference 1](https://cheapsslsecurity.com/blog/what-is-asymmetric-encryption-understand-with-simple-examples/)
+[Reference 2](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
+[Reference 3](https://www.cyber.gov.au/acsc/view-all-content/guidance/use-two-factor-authentication)
+[Reference 4](https://www.webopedia.com/TERM/S/strong_password.html)
+[Reference 5](https://en.wikipedia.org/wiki/Base64)
+[Reference 6](https://premium.wpmudev.org/blog/understanding-file-permissions/)
+[Reference 7](https://www.siteground.com/tutorials/cpanel/file-permissions/)
+[Reference 8](https://www.packetlabs.net/session-management/)
+[Reference 9](https://www.hack2secure.com/blogs/discover-what-session-management-is)
+[Reference 10](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
+[Reference 11](https://www.cloudflare.com/learning/ddos/glossary/web-application-firewall-waf/)
+[Reference 12](https://www.f5.com/services/resources/glossary/web-application-firewall)
+
 ------
 
 
 ## Q8 Research what your legal obligations are in relation to handling user data and how they can be met for the project
-
-[Reference 1](https://www.oaic.gov.au/privacy/the-privacy-act/rights-and-responsibilities/)
-[Reference 2](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference/)
-[Reference 3](https://www.business.gov.au/Finance/Payments-and-invoicing/How-to-process-electronic-card-payments-securely)
-[Reference 4](https://legalvision.com.au/what-is-the-pci-dss/)
 
 ### Australian Privacy Principles
 
@@ -281,6 +276,11 @@ This legal standard is in place for any business to ensure customers card inform
 
 Ensuring compliance with these standards is extremely important, for smaller businesses this is done via self-assessment questionnaire through the PCI security standards council, larger businesses require security audits and scans. There are significant penalties for non-compliance, in order to avoid this possibility, it is possible to outsource to a payment gateway that handles payment collection like PayPal or Eway which already maintain compliance. This is something to consider as generally users can be more confident with purchases and entering card details via a program, they are familiar with like PayPal which then contribute to the user experience of the application. Additional using a program like PayPal requires the user to just log in rather then enter full credit card details.
 
+
+[Reference 1](https://www.oaic.gov.au/privacy/the-privacy-act/rights-and-responsibilities/)
+[Reference 2](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference/)
+[Reference 3](https://www.business.gov.au/Finance/Payments-and-invoicing/How-to-process-electronic-card-payments-securely)
+[Reference 4](https://legalvision.com.au/what-is-the-pci-dss/)
 
 
 ------
