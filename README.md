@@ -177,6 +177,44 @@ Automatic testing is a testing process whereby an automatic comparison is done o
 
 ## Q6 Discuss and analyse requirements related to information system security and how they relate to the project
 
+[Reference 1](ttps://en.wikipedia.org/wiki/Information_security)
+[Reference 2](https://stepuptocrypt.blogspot.com/p/blog-page.html)
+[Reference 3](https://www.computersciencedegreehub.com/faq/what-is-information-systems-security/)
+[Reference 4](https://www.oaic.gov.au/privacy/the-privacy-act/rights-and-responsibilities/)
+[Reference 5](https://kirkpatrickprice.com/blog/why-every-company-needs-an-information-security-program/)
+[Reference 6](https://en.wikipedia.org/wiki/Information_security#Risk_management)
+[Reference 7](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
+[Reference 8](https://en.wikipedia.org/wiki/Information_security#Risk_management)
+
+### Information Systems Security (INFOSEC)
+
+INFOSEC is exclusively the processes related to data security. The fundamentals of INFOSEC are confidentiality, integrity, and availability. These values are at the core of the safe accessibility of data by users. Infosec practice is in place to prevent, or at best, largely minimise the chances of unauthorized access to data by way of unlawful use, disclosure, disruption, deletion, corruption, modification, inspection, recoding or devaluation of the information. Referring to the core fundamentals of INFOSEC, below outlines to requirements in relation to them.
+
+#### Confidentiality 
+
+In information security, confidentiality and the maintenance of it is very important. It is not the same as privacy, however, is a contributing factor. The Australian Privacy Act outlines that people have the right to not only know why personal information is collected, but also how it will be used and who it will be disclosed to. Confidentiality processes ensure that this information is protected from ending up in the hands of individuals not authorised. For this to be possible various methods are put in place in application building.
+
+#### Integrity
+
+In information security, integrity of data involves the maintenance of the security of the data. Ensuring during the lifecycle of the data that is remains protected from the risk of unauthorized modification, to safeguard the accuracy and continuity of the data. 
+
+#### Availability 
+
+In information security, availability of data is imperative as any system would not be able to operate as intended without accurate and safe data availability. This involves the computer systems, services, the data and any components in the information system, must always be functioning correctly and also available. In order for this to be possible risk assessment plans and disaster recovery plans should be implemented. Ensuring data availability even in the event of a natural disaster, power outages, machinery failure, system changes and also in the event of a denial-of-service attack, which floods a system with traffic and ultimately shutting it down. 
+
+#### Risk Management
+
+
+- Identifying Assets- This is the first step in risk assessment, these can include hardware, software, data, people, servers and so on. This involves also estimating their value. 
+
+- Identifying Threats- A threat assessment is necessary to analyse anything that could misuse or breach security or potentially cause any harm to the organization. This can include natural disasters like flooding or fire, system failure which the likelihood depends on the quality of the equipment, and human interference whether that be accidental or malicious.
+
+- Identifying Vulnerabilities- This aspect of risk assessment is very important. It is the identification of any possible weakness in the organization and programs. This can be done in various ways such as testing and auditing.
+
+- Analyse Controls- This step in risk assessment works hand in hand with the authentication methods as mentioned below. Either analysing controls already in plan or plan to put them in place. Technical ones can be encryption and authentication methods; however, some controls are nontechnical such as security policies and ensuring they are up to date. Controls also fall into two categories, preventative which is controls such as encryption that stop security threats and detective controls that are in place to discover any attacks.
+
+- Threat Likelihood and Impact- Once all the steps previously mentioned are completed, it is important to determine in the case of a security breach, what would be the estimated potential and frequency of a security threat and also the estimated financial impact. Once an estimated value on a breach is made, then steps can be taken to budget for any possible breaches which enables business continuity. If any security breach happened without all possible planning beforehand it could bankrupt a business depending on the financial loss. Threat prioritisation and rating are also important; this is calculated using the likelihood and the impact. This can ensure more serious risks are handle first before less likely to occur breaches. 
+
 
 ------
 
@@ -184,11 +222,64 @@ Automatic testing is a testing process whereby an automatic comparison is done o
 ## Q7 Discuss common methods of protecting information and data and how you would apply them to the project
 
 
+[Reference 1](https://cheapsslsecurity.com/blog/what-is-asymmetric-encryption-understand-with-simple-examples/)
+[Reference 2](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
+[Reference 3](https://www.cyber.gov.au/acsc/view-all-content/guidance/use-two-factor-authentication)
+[Reference 4](https://www.webopedia.com/TERM/S/strong_password.html)
+[Reference 5](https://en.wikipedia.org/wiki/Base64)
+[Reference 6](https://premium.wpmudev.org/blog/understanding-file-permissions/)
+[Reference 7](https://www.siteground.com/tutorials/cpanel/file-permissions/)
+[Reference 8](https://www.packetlabs.net/session-management/)
+[Reference 9](https://www.hack2secure.com/blogs/discover-what-session-management-is)
+[Reference 10](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
+[Reference 11](https://www.cloudflare.com/learning/ddos/glossary/web-application-firewall-waf/)
+[Reference 12](https://www.f5.com/services/resources/glossary/web-application-firewall)
+
+All of the methods mentioned below would be useful methods in a marketplace application, these methods have been highlighted for this reason. 
+
+### Access and Authentication
+
+#### Basic HTTP Authentication- 
+
+- Unique User ID- This is access security measure is often the basis of user authentication and authorisation. This involves ensuring that every user has their own unique username/ID, whereby no users have the same ID.
+
+- Strong passwords- This is another method of data protection. The definition of a strong password is a password that is very difficult to detect by other humans and also computer programs. These passwords usually consist of a minimum of 6 characters that are a combination of letters, numbers and symbols. 
+
+- Basic authentication involves transmitted the user ID and password credentials as a pair and encoding them using base64(which is a binary-to-text encoding scheme). Using the aforementioned user ID and password is the basis of HTTP authentication, however it is not secure enough to be used on its own. It should be used as HTTPS which is HTTP used along with an SSL certification, using the encryption methods as mentioned before ensures more secure user information.  
+
+- Encryption- Encryption schemes are popular in information security. One of these schemes is Asymmetric Encryption. Whilst symmetric encryption involves one secret key, asymmetric involves two separate, yet connected cryptographic keys. Asymmetric encryption is also known as public-key cryptography, and it the process is two keys, one being a ‘Public Key’ and the other a ‘Private Key’, whereby one encrypts and the other decrypts. The keys are created via a cryptographic algorithm. These keys are distinct, but connected and are exchanged over an information system, however only the private key can decrypt the data. In the example of SSL (Secure Socket Layer) certification usage, when the browser and server (the application and the user) make connection, they are validated by each other’s public and private key connection. This then confirms the verification and the user is able to continue the application session. Asymmetric cryptography does have some drawbacks in that it has a longer computational time for verification, however it takes a longer amount of time due to being more secure then symmetric encryption. 
+
+- Two-factor authentication- This type of information protection is very common in today’s world, particularly for online accounts such as banking. It can be an important information protection mechanism, as it is the process of “double checking” the user is who the user says they are. A username and password are a standard single-factor authentication, whilst the addition of two-factor can involve a code being sent to a mobile device, use of an authentication application or even fingerprint identification on a smart phone. This process can provide a much stronger defence in a user’s account protection, it can however entail more set up on the users end, so this should be taken into account in regard to user experience. 
+
+- Session Management/Cookies- Proper session management plays crucial part in facilitation of interactions that are secure between a user and an application. During a session a user might be submitting requests using sensitive information, and the application might need to retain this information, particularly in already authenticated user logged in sessions. This is why session cookies are used, these cookies store unique ID’s that are sent from the web server to allow the application to remember the particular information about the user using it. Cookies are a simple method of session management; however, they should be used properly. Some ways for correct management of sessions are using HTTPS channel, new cookie generation for each session stage, cookie expiration when the account is inactive and properly configured cookies which means long, unique and irregular. 
+
+- File Permissions- File permissions are important in information security as setting proper permissions will reduce the vulnerability of websites greatly, thus contributing to the overall security measures. File permissions involved three components, read, write and execute. Read allowing for read access, write allowing for medication and execute allowing for a file to be run. There are three different classes of user group, these are User (the file owner), Group (others with file access, such as site members), and the World (which is everyone else with internet access). These file permissions are all handled by a correctly configured web server. File permissions are viewed using 3 consecutive numbers, the first number is the user access, the second the group access and the third the world access. Each number is equal to a possible action. For example, 000 is no access for any of the user groups, and 777 is the greatest amount of access for all groups. Typically, permission 644 is standard for files as it is readable only by all, but writable by the user, of course this change depending on the file and directory and the usage required. To summaries, file permissions are to be taken seriously and proper usage contributes to the overall security of the website. 
+
+### Web Application Firewall (WAF)
+
+A WAF is a trusted method put in place to help protect a web application from various types of application breaches, such as cross-site-scripting and cookie poisoning and so on. It essentially is a shield between a web application and the internet that filters and blocks any malicious web traffic.  It operates either via hardware, software or cloud-based via a set of policies whereby the user’s information passing through the firewall before reaching the server. A WAF can bring benefits of speed and ease in its protection methods and a WAF is what would mitigate attacks such as DDos. 
+
 ------
 
 
 ## Q8 Research what your legal obligations are in relation to handling user data and how they can be met for the project
 
+[Reference 1](https://www.oaic.gov.au/privacy/the-privacy-act/rights-and-responsibilities/)
+[Reference 2](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference/)
+[Reference 3](https://www.business.gov.au/Finance/Payments-and-invoicing/How-to-process-electronic-card-payments-securely)
+[Reference 4](https://legalvision.com.au/what-is-the-pci-dss/)
+
+### Australian Privacy Principles
+
+In the Australian Privacy Act, it outlines 13 core guidelines for the handling of personal information and promotes transparency and accountability. Consumers expect privacy when dealing with an organization, and as long as steps are taken to put in place strong information security requirements that adhere to privacy laws, then they are more likely to buy from these companies as a good reputation with privacy is very important.
+
+Some particular aspects of the APP that are relevant to a web application include open and transparent management of personal information, which for an application involves enabling the user to be able to log in and change any form of personal information they supply when creating an account such as email, address and payment details. A second aspect is anonymity and pseudonymity, whereby an individual has the right of not identifying themselves, in the case of an application this can be limiting, but the previous of a guest only check out is an option for giving users the option to know create an entire account. A third aspect is unwanted direct marketing, for an application the user should have the option to unsubscribe to any marketing material that is not wanted.
+
+### Payment Card Industry Data Security Standard (PCI-DSS)
+
+This legal standard is in place for any business to ensure customers card information is always secure. These standards apply to taking payments not just via a terminal but also online, via phone and letter. Following this standard means users are reassured that their card details submitted online on an application are secure, and not at risk of having payment data stolen. This enables a better online shopping experience for a user. The PCI-DSS standards involve using a firewall, secure passwords on all systems, data protection for any cardholder with that data encrypted if being transmitted, regular software updating, regular system development and maintenance, control access to cardholder data, manage unique employee log ins to systems and closely track and monitor any access, restrict any physical storage of cardholder information, conduct regular tests of security systems in place and lastly create and maintain a policy specific to information security for payment systems.
+
+Ensuring compliance with these standards is extremely important, for smaller businesses this is done via self-assessment questionnaire through the PCI security standards council, larger businesses require security audits and scans. There are significant penalties for non-compliance, in order to avoid this possibility, it is possible to outsource to a payment gateway that handles payment collection like PayPal or Eway which already maintain compliance. This is something to consider as generally users can be more confident with purchases and entering card details via a program, they are familiar with like PayPal which then contribute to the user experience of the application. Additional using a program like PayPal requires the user to just log in rather then enter full credit card details.
 
 
 
