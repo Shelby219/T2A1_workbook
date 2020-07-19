@@ -646,7 +646,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 
 
-![tests](https://github.com/Shelby219/CA_Terminal_App_RPSLS/blob/master/docs/tests.png  "tests")
+![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.png "ERD")
 
 
 ------
