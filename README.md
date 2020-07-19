@@ -538,7 +538,7 @@ To summarize, it is clear Binary Search is more efficient in performance time co
 
   - a. List and describe the software used by the app.
 
-
+-----
 
 
   - b. Describe the hardware used to host the app.
@@ -606,21 +606,47 @@ With applications housing many API keys, credentials and secrets with safe acces
 [Reference 19](https://www.consul.io/intro)
 [Reference 20](https://www.terraform.io/intro/index.html)
 
+-----
 
   - c. Describe the interaction of technologies within the app
 
 
+
+
+
+-----
+
   - d. Describe the way data is structured within the app
 
 
+
+
+
+-----
+
   - e. Identify entities which must be tracked by the app
 
+
+
+
+-----
 
   - f. Identify the relationships and associations between the entities you have identified in part (e)
 
 
 
+
+
+
+
+
+-----
+
   - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
+
+
+
+![tests](https://github.com/Shelby219/CA_Terminal_App_RPSLS/blob/master/docs/tests.png  "tests")
 
 
 ------
