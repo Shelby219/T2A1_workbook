@@ -229,7 +229,7 @@ All of the methods mentioned below would be useful methods in a marketplace appl
 
 - Unique User ID- This is access security measure is often the basis of user authentication and authorisation. This involves ensuring that every user has their own unique username/ID, whereby no users have the same ID.
 
-- Strong passwords- This is another method of data protection. The definition of a strong password is a password that is very difficult to detect by other humans and also computer programs. These passwords usually consist of a minimum of 6 characters that are a combination of letters, numbers and symbols. 
+- Strong passwords- This is another method of data protection. The definition of a strong password is a password that is very difficult to detect by other humans and also computer programs. Usually consisting of a minimum of 6 characters and are a combination of letters, numbers and symbols. 
 
 - Basic authentication involves transmitted the user ID and password credentials as a pair and encoding them using base64(which is a binary-to-text encoding scheme). Using the aforementioned user ID and password is the basis of HTTP authentication, however it is not secure enough to be used on its own. It should be used as HTTPS which is HTTP used along with an SSL certification, using the encryption methods as mentioned before ensures more secure user information.  
 
@@ -244,7 +244,6 @@ All of the methods mentioned below would be useful methods in a marketplace appl
 ### Web Application Firewall (WAF)
 
 A WAF is a trusted method put in place to help protect a web application from various types of application breaches, such as cross-site-scripting and cookie poisoning and so on. It essentially is a shield between a web application and the internet that filters and blocks any malicious web traffic.  It operates either via hardware, software or cloud-based via a set of policies whereby the user’s information passing through the firewall before reaching the server. A WAF can bring benefits of speed and ease in its protection methods and a WAF is what would mitigate attacks such as DDos. 
-
 
 [Reference 1](https://cheapsslsecurity.com/blog/what-is-asymmetric-encryption-understand-with-simple-examples/)
 [Reference 2](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
@@ -535,12 +534,92 @@ To summarize, it is clear Binary Search is more efficient in performance time co
 
 ------
 
-## Q14 Conduct research into a marketplace website (app) and answer the following parts:  a. List and describe the software used by the app.
+## Q14 Conduct research into a marketplace website (app) and answer the following parts:  
+
+  - a. List and describe the software used by the app.
+
+
+
+
   - b. Describe the hardware used to host the app.
+
+In about mid 2018 Depop completed a large project to move multiple key components of their largest application to AWS from Heroku, this was described as paving the way for the next generation of their platform. Whilst certain components remain on other infrastructure like Heroku, the following is the components used in this new ecosystem for the main application in AWS:
+
+### Terraform
+
+Terraform is a tool used for building, changing and alternating versions of infrastructure in a safe and efficient way. Depop indicated that they use this platform in setting up their infrastructure. 
+
+### Docker- For application Packaging
+
+Based on containers that house code and code dependencies in a standard unit, Docker is the industry standard for which these containers are built, shared and run. Docker’s technology focuses on the need to keep application dependencies separate from the main infrastructure with the benefits of being able to run multiple containers on the same machine and less space being taken up as opposed to virtual machines. Docker has Docker container images, these lightweight templates for creating containers house all instructions and components needed to run an application. They then become containers once run on Docker Engine. Depop describes running single Docker images on instances, with them utilising the hardware where possible.
+
+### AWS Elastic Cloud Compute (EC2)- Main Application running 
+
+EC2 is a part of Amazon Web Services cloud computing system. Its purpose is to provide its users with virtual computers, called instances, to enable deployment and running of computer applications via cloud computing with a high level of control. This provides the way businesses can launch and use as many instances as needed and housing any software preferred, with a strong emphasis on scalability, which is encouraged. A strongly highlighted advantage of EC2 is if and when application capacity requirements change or advance and more resources might be needed, EC2 ensures this can be done without any hindrance with such flexibility in configurations such as CPU, memory and storage. 
+
+Depop has made reference to choosing to keep Docker as the packaging provider, as mentioned above running a single Docker image on an instance, rather than an Amazon Machine Image route. They highlighted that this was the simplest approach for their require needs. It was also found that they at some point desire to move to Fargate for container launching as opposed to continue using EC2. Whilst EC2 does highlight their scalability potential, Depop did find issues with their application and scalability with their container running requirements. They addressed wanting to run as many containers as possible without the need for a lot of optimisation. The core of the problem being that 1 EC2 instance has host 1 ECS task, then the ECS wanting to scale out by adding a task for example, with then no EC2 instance for the task to be placed on. The only result is the ECS scheduler waiting for the Amazon Scale Group to boot up an instance. This highlights one of the disadvantages of container-based systems, whilst scalability is definitely possible, the actual speed of scale-out suffers.  The solution to this was they implemented a Lambda function via AWS Lambda. 
+
+### AWS Elastic Container Service (ECS)- Works and Tasks running 
+
+Amazon ECS is a container management service, again with the approach of scalability and fast management. Dockers Containers are ran on a cluster, hosted on a serverless infrastructure with Amazon ECS manages. Via simple API calls, container-base applications are able to be launched and stopped with Amazon ECS. Once a cluster is running, tasks and services can then be defined that provide specificity of which Docker container images to run across aforementioned clusters. Amazon ECS does the hard work of managing the cluster, configuring the management systems when applications are scaled. 
+
+### AWS Lamba- For customer task execution 
+
+AWS Lambda is a responsive computer service which runs desired code when needed and has the functionality of automatic scaling, highlighting that this could be from a few traffic requests to up to thousands per second. The way to utilise AWS Lambda is to just supply the code, the infrastructure of this computer service means it performs all resource administration such as any maintenance, monitoring and scaling and so on, automatically. The code supplied to run on AWS Lambda is appropriately named a “Lambda Function”, in which after creation is ready to be run when triggered. 
+
+As mentioned above, due to a scale-out time frame issues, Depop implemented a Lamba function in which the ECS cluster utilisation is periodically read, and then calculated the number of containers that can be scheduled that moment and then publishes these results as a CloudWatch metric, which in turn sets off an alarm based on said metric to then execute the auto scaling action. In short, this function was set in place to ensure space is always available for n tasks to be set in place by ECS. This example is showing the abilities of AWS Lambda for businesses like Depop to overcome any hinderances in application running or create custom functions for other reasons using a Lambda.
+
+### AWS Kinesis Data Streams (KDS) and Fluentd – For logging
+
+AWS Kinesis is data streaming service, in which large amounts of data is captured at a per second rate from many different sources, and then made available in real time for customisable usage. The type of data that can be in this continuous intake can include application log, infrastructure logs, web data and so on. As the response time of Kinesis data streams is described as real time then the processing is on most occasions lightweight. 
+
+Fluentd is described as an open-source data collector written in C# and Ruby, with a focus on unification of data via a unified logging layer. For this layer to work as intended it must be reliable and scalable. Fluentd satisfies this requirement by having a plugin system with great flexibility, which allows for large extended functionality and support of new data inputs with minimal technical difficulty. 
+
+Depop describes using this Fluentd container for all of their logs, which uses the Kinesis plug in from AWS to send all of these logs in via JSON format to Kinesis, following is processing in a Lambda.
+
+### Datadog - For monitoring
+
+Datadog is a platform for cloud-based applications for monitoring. It operates by gathering data from servers, containers, databases and third-party areas to provide the ability of full stack observation. It highlights seamless aggregation of metrics across the full devops stack and also houses a large list of possible integrations, making this monitoring platform very versatile. Describes utilising Datadog on their instances directly for monitoring, also assuming they might use Datadog across the application for other monitoring purposes.
+
+### Vault – For configs and secrets hosting
+
+With applications housing many API keys, credentials and secrets with safe access across the system, a program such as Vault is utilised. It is a tool which allows secure access to all these secrets. Vault provides an interface to these secrets that is unified, whilst behind the scenes keeping tight control of the access and keeping a detailed audit log. Some of the highlighted features of Vault is Secure Secret Storage which encrypts before then writing to persistent storage such as Consul, Dynamic secret generation and full data encryption properties. Depop highlights using Vault for their secrets housing and along with utilisation of Consul to configure services where needed for this housing. 
+
+[Reference 1](https://engineering.depop.com/)
+[Reference 2](https://engineering.depop.com/aws-migration-a-depop-story-1444e9aaad31)
+[Reference 3](https://www.docker.com/why-docker)
+[Reference 4](https://www.docker.com/resources/what-container)
+[Reference 5](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/#:~:text=A%20Docker%20image%20is%20a,publicly%20with%20other%20Docker%20users.)
+[Reference 6](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+[Reference 7](https://engineering.depop.com/ahead-of-time-scheduling-on-ecs-ec2-d4ef124b1d9e)
+[Reference 8](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+[Reference 9](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+[Reference 10](https://engineering.depop.com/ahead-of-time-scheduling-on-ecs-ec2-d4ef124b1d9e)
+[Reference 11](https://aws.amazon.com/lambda/features/)
+[Reference 12](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)
+[Reference 13](https://aws.amazon.com/kinesis/data-streams/)
+[Reference 14](https://www.fluentd.org/architecture)
+[Reference 15](https://www.fluentd.org/blog/unified-logging-layer)
+[Reference 16](https://www.datadoghq.com/about/latest-news/)
+[Reference 17](https://www.datadoghq.com/product/)
+[Reference 18](https://www.vaultproject.io/docs/what-is-vault)
+[Reference 19](https://www.consul.io/intro)
+[Reference 20](https://www.terraform.io/intro/index.html)
+
+
   - c. Describe the interaction of technologies within the app
+
+
   - d. Describe the way data is structured within the app
+
+
   - e. Identify entities which must be tracked by the app
+
+
   - f. Identify the relationships and associations between the entities you have identified in part (e)
+
+
+
   - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 
