@@ -23,7 +23,7 @@ The controller is the binder that brings together the model and the view. The br
 [Reference 1](https://adrianmejia.com/ruby-on-rails-architectural-design/)
 
 
-------
+----
 
 
 ## Q2 Identify a database commonly used in web applications (including Rails) and discuss the pros and cons of this database
@@ -64,7 +64,7 @@ Although one of the oldest open source database management system, PostgreSQL is
 [Reference 4](https://www.guru99.com/introduction-postgresql.html)
 [Reference 5](https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems)
 
-------
+----
 
 ## Q3 Discuss the implementation of Agile project management methodology
 
@@ -115,7 +115,7 @@ The role of the Scrum Master is a facilitator of the team. Ensure the scrum fram
 [Reference 7](https://en.wikipedia.org/wiki/Scrum_(software_development))
 [Reference 8](http://agilemanifesto.org/)
 
-------
+----
 
 ## Q4 Provide an overview and description of a standard source control workflow
 
@@ -154,7 +154,7 @@ The principle of this workflow is that also feature development takes place on d
 [Reference 2](https://www.atlassian.com/git/tutorials/what-is-version-control)
 [Reference 3](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
-------
+----
 
 ## Q5 Provide an overview and description of a standard software testing process (e.g. manual testing)
 
@@ -173,7 +173,7 @@ Automatic testing is a testing process whereby an automatic comparison is done o
 [Reference 1](https://www.guru99.com/automation-testing.html#1)
 [Reference 2](https://browsee.io/blog/automation-testing-explained/)
 
-------
+----
 
 ## Q6 Discuss and analyse requirements related to information system security and how they relate to the project
 
@@ -215,7 +215,7 @@ In information security, availability of data is imperative as any system would 
 [Reference 7](https://blog.netwrix.com/2018/01/16/how-to-perform-it-risk-assessment/)
 [Reference 8](https://en.wikipedia.org/wiki/Information_security#Risk_management)
 
-------
+----
 
 
 ## Q7 Discuss common methods of protecting information and data and how you would apply them to the project
@@ -258,7 +258,7 @@ A WAF is a trusted method put in place to help protect a web application from va
 [Reference 11](https://www.cloudflare.com/learning/ddos/glossary/web-application-firewall-waf/)
 [Reference 12](https://www.f5.com/services/resources/glossary/web-application-firewall)
 
-------
+----
 
 
 ## Q8 Research what your legal obligations are in relation to handling user data and how they can be met for the project
@@ -282,7 +282,7 @@ Ensuring compliance with these standards is extremely important, for smaller bus
 [Reference 4](https://legalvision.com.au/what-is-the-pci-dss/)
 
 
-------
+----
 
 ## Q9 Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
@@ -322,7 +322,7 @@ Is defined as the set of acceptable values an attribute allows for data input. T
 [Reference 4](https://www.guru99.com/relational-data-model-dbms.html#2)
 [Reference 5](https://opentextbc.ca/dbdesign01/chapter/chapter-7-the-relational-data-model/#:~:text=A%20domain%20is%20the%20original,%3A%20Married%2C%20Single%2C%20Divorced.)
 
-------
+----
 
 ## Q10 Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
@@ -346,7 +346,7 @@ These controls are in referencing to the usage of foreign keys. Foreign keys are
 [Reference 3](https://www.guru99.com/relational-data-model-dbms.html#2)
 [Reference 4](https://www.techopedia.com/definition/7272/foreign-key#:~:text=A%20foreign%20key%20is%20a,establishing%20a%20link%20between%20them.)
 
-------
+----
 
 ## Q11 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
 
@@ -395,7 +395,7 @@ The DELETE statement is used for data deletion one or more existing records in a
 [Reference 5](https://en.wikipedia.org/wiki/Delete_(SQL))
 [Reference 6](https://www.tutorialspoint.com/sql/sql-insert-query.htm)
 
-------
+----
 
 ## Q12 Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O)
 
@@ -467,7 +467,7 @@ Whilst this is a simple style algorithm, it would not be the most efficient part
 [Reference 9](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
 
 
-------
+----
 
 ## Q13 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
 
@@ -532,13 +532,13 @@ To summarize, it is clear Binary Search is more efficient in performance time co
 [Reference 5](https://towardsdatascience.com/a-guide-to-linear-search-and-binary-search-on-arrays-data-structures-algorithms-2c23a74af28a)
 
 
-------
+----
 
 ## Q14 Conduct research into a marketplace website (app) and answer the following parts:  
 
   - a. List and describe the software used by the app.
 
------
+------
 
 
   - b. Describe the hardware used to host the app.
@@ -606,7 +606,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 [Reference 19](https://www.consul.io/intro)
 [Reference 20](https://www.terraform.io/intro/index.html)
 
------
+------
 
   - c. Describe the interaction of technologies within the app
 
@@ -614,7 +614,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 
 
------
+------
 
   - d. Describe the way data is structured within the app
 
@@ -622,14 +622,14 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 
 
------
+------
 
   - e. Identify entities which must be tracked by the app
 
 
 
 
------
+------
 
   - f. Identify the relationships and associations between the entities you have identified in part (e)
 
@@ -640,7 +640,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 
 
------
+------
 
   - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
@@ -649,4 +649,4 @@ With applications housing many API keys, credentials and secrets with safe acces
 ![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.png "ERD")
 
 
-------
+----
