@@ -721,20 +721,20 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 ## - e. Identify entities which must be tracked by the app
 
-Users
-  Buyers
-  Sellers
-   Followers
-   Comments
-   Reviews
-Items
-  Sizes
-  Brands
-  Delivery
-  Categories
-    Sub categories
-    Mens wear 
-    Womens ear
+- Users
+  -Buyers
+  -Sellers
+   -Followers
+   -Comments
+   -Reviews
+- Items
+  -Sizes
+  -Brands
+  -Delivery
+  -Categories
+    -Sub categories
+    -Mens wear 
+    -Womens ear
 
 
 
@@ -743,40 +743,39 @@ Items
 ##  - f. Identify the relationships and associations between the entities you have identified in part (e)
 
 
-User has_many user_followers
-User has_one seller
-User has_and_belongs_to_many followers
+- User has_many user_followers
+- User has_one seller
+- User has_and_belongs_to_many followers
 
+- Seller belongs_to user
+- Seller has_many items
+- Seller has_many reviews
 
-Seller belongs_to user
-Seller has_many items
-Seller has_many reviews
+- Buyer has_many items
+- Buyer has_many reviews
+- Buyer has_one shopping bag
 
-Buyer has_many items
-Buyer has_many reviews
-Buyer has_one shopping bag
+- Review belongs_to one seller
+- Review belongs_to one buyer
 
-Review belongs_to one seller
-Review belongs_to one buyer
+- Shopping_bag has_many seller_items
+- Shopping_bag belongs_to one buyer
 
-Shopping_bag has_many seller_items
-Shopping_bag belongs_to one buyer
+- Followers has_and_belongs_to_many users
 
-Followers has_and_belongs_to_many users
+- Item belongs_to seller
+- Item belongs_to buyer optional true
+- Item has_many sizes
+- Item has_many brands
+- Item has_many delivery types
+- Item has_many categories
+- Item has_many comments through user
 
-Item belongs_to seller
-Item belongs_to buyer optional true
-Item has_many sizes
-Item has_many brands
-Item has_many delivery types
-Item has_many categories
-Item has_many comments through user
+- Comment belong_to one user
 
-Comment belong_to one user
-
-Categories has_many other_sub_categories
-Categories has_many womens_wear
-Categories has_many mens_wear
+- Categories has_many other_sub_categories
+- Categories has_many womens_wear
+- Categories has_many mens_wear
 
 
 ------
