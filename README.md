@@ -552,7 +552,7 @@ As Depop is an application on the web, iOS and Android, it uses a selection of s
 
 ### JavaScript- Web
 
-JavaScript is a lightweight dynamic programming language. It is an interpreted scripting language most commonly used for client-side web pages. User in conjunction with HTML and CSS it elevates websites from static to dynamic. Not to be confused with Java, as JavaScript does not need any compilation to run, it is automatic via a program called the JavaScript engine. All major web browsers have their own JavaScript engine too execute JavaScript’s.
+JavaScript is a lightweight dynamic scripting programming language. It is an interpreted scripting language most commonly used for client-side web pages. User in conjunction with HTML and CSS it elevates websites from static to dynamic. Not to be confused with Java, as JavaScript does not need any compilation to run, it is automatic via a program called the JavaScript engine. All major web browsers have their own JavaScript engine too execute JavaScript’s.
 
 ### Nginx- Web Server
 
@@ -658,7 +658,7 @@ Depop has made reference to choosing to keep Docker as the packaging provider, a
 
 Amazon ECS is a container management service, again with the approach of scalability and fast management. Dockers Containers are ran on a cluster, hosted on a serverless infrastructure with Amazon ECS manages. Via simple API calls, container-base applications are able to be launched and stopped with Amazon ECS. Once a cluster is running, tasks and services can then be defined that provide specificity of which Docker container images to run across aforementioned clusters. Amazon ECS does the hard work of managing the cluster, configuring the management systems when applications are scaled. 
 
-### AWS Lamba- For customer task execution 
+### AWS Lambda- For various task execution 
 
 AWS Lambda is a responsive computer service which runs desired code when needed and has the functionality of automatic scaling, highlighting that this could be from a few traffic requests to up to thousands per second. The way to utilise AWS Lambda is to just supply the code, the infrastructure of this computer service means it performs all resource administration such as any maintenance, monitoring and scaling and so on, automatically. The code supplied to run on AWS Lambda is appropriately named a “Lambda Function”, in which after creation is ready to be run when triggered. 
 
@@ -674,7 +674,7 @@ Depop describes using this Fluentd container for all of their logs, which uses t
 
 ### Datadog - For monitoring
 
-Datadog is a platform for cloud-based applications for monitoring. It operates by gathering data from servers, containers, databases and third-party areas to provide the ability of full stack observation. It highlights seamless aggregation of metrics across the full devops stack and also houses a large list of possible integrations, making this monitoring platform very versatile. Describes utilising Datadog on their instances directly for monitoring, also assuming they might use Datadog across the application for other monitoring purposes.
+Datadog is a platform for cloud-based applications for monitoring. It operates by gathering data from servers, containers, databases and third-party areas to provide the ability of full stack observation. It highlights are seamless aggregation of metrics across the full devops stack and it also houses a large list of possible integrations, making this monitoring platform very versatile. Depop describes utilising Datadog on their instances directly for monitoring, also assuming they might use Datadog across the application for other monitoring purposes.
 
 ### Vault – For configs and secrets hosting
 
@@ -706,8 +706,17 @@ With applications housing many API keys, credentials and secrets with safe acces
 ##  - c. Describe the interaction of technologies within the app
 
 
+Depop being a global web and smart phone application, means it does use quite a plethora of various software and hardware as shown by Stack Share. This being said, the aforementioned software and hardware highlighted does have clear relations and interactions.
+
+To start with, Depop utilises Java and JavaScript programming, possibly for portions of their web application. This goes hand in hand with React, a JavaScript Library and Redux, a state container management platform and Node.js being a JavaScript runtime engine. They utilise Nginx possible for its main web server capabilities, but they could also utilise its other capabilities such as caching and load balancing. PostgreSQL is highlighted as a database system they employ. In using GraphQL, an example is utilising Node.js API starter kit which is a boilerplate project for authoring data API backends using Node.js and GraphQL, enabling connection to PostgreSQL for data access. This boilerplate could be a part of Depop’s system. 
+
+Depop’s uses a large Stack of hardware, thought the ones highlighted do operate as a part of the core application. Terraform is highlighted as the platform used in setting up hardware infrastructure. Docker is used for application packaging, Depop has referenced in keeping Docker as the main packaging provider over EC2, as this was the best process for their requirements. They do utilise AWS EC2 for the main application container launching, and AWS ECS for works and task running on the Docker containers ran on a cluster in which AWS ECS manages. AWS Lambda is utilised for various task execution, in which Depop has implemented certain Lambda functions. One of which mentioned was a Lambda function which was implemented to resolve scale-out time frame issues. AWS Kinesis and Fluentd work together for logging, in which Depop describes using this Fluentd container for all of their logs, which uses the Kinesis plug in from AWS to send all of these logs in via JSON format to Kinesis, following is processing in a Lambda. Datadog is employed by Depop for monitoring on their instances directly, they might also utilise Datadog elsewhere on the application. Lastly Vault is utilised for housing secrets along with utilisation of Consul to configure services where needed for this housing.
+
+Along with their web application, their core application is via smart phone, iOS and Android. The languages used for this programming is Scala and Java for Android and Objective-C and more prominently Swift for iOS development. 
 
 
+[Reference 1](https://www.moesif.com/blog/graphql/technical/Ways-To-Add-GraphQL-To-Your-Postgres-Database-Comparing-Hasura-Prisma-and-Others/)
+[Reference 2](https://github.com/kriasoft/nodejs-api-starter)
 
 ------
 
@@ -724,9 +733,9 @@ With applications housing many API keys, credentials and secrets with safe acces
 - Users
   - Buyers
   - Sellers
-   - Followers
-   - Comments
-   - Reviews
+    - Followers
+    - Comments
+    - Reviews
 - Items
   - Sizes
   - Brands
@@ -736,12 +745,9 @@ With applications housing many API keys, credentials and secrets with safe acces
     - Mens wear 
     - Womens wear
 
-
-
 ------
 
 ##  - f. Identify the relationships and associations between the entities you have identified in part (e)
-
 
 - User has_many user_followers
 - User has_one seller
@@ -780,9 +786,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 ------
 
-  - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
-
-
+##  - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 ![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.png)
 
