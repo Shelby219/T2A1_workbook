@@ -722,19 +722,19 @@ With applications housing many API keys, credentials and secrets with safe acces
 ## - e. Identify entities which must be tracked by the app
 
 - Users
-  -Buyers
-  -Sellers
-   -Followers
-   -Comments
-   -Reviews
+  - Buyers
+  - Sellers
+   - Followers
+   - Comments
+   - Reviews
 - Items
-  -Sizes
-  -Brands
-  -Delivery
-  -Categories
-    -Sub categories
-    -Mens wear 
-    -Womens ear
+  - Sizes
+  - Brands
+  - Delivery
+  - Categories
+    - Sub categories
+    - Mens wear 
+    - Womens wear
 
 
 
@@ -784,7 +784,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 
 
-![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.pdf "ERD")
+![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.pdf)
 
 
 ----
