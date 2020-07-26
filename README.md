@@ -407,6 +407,8 @@ Quick sort is based on the Divide and Conquer method which is breaking the probl
 
 The time complexity of this Algorithm for worst case O(n2), which is the larger the input data, the larger the steps. This can be the case when the selected pivot element is either one of the smaller or larger elements in the array, happening when the input data is already sorted or reverse sorted. This scenario can have a lesser change of occurring by choosing the pivot randomly or choosing the middle index. An example below is using random pivoting.
 
+An example code snippet is below:
+
             
     partition(arr[], lo, hi) 
         pivot = arr[hi]
@@ -435,7 +437,9 @@ The time complexity of this Algorithm for worst case O(n2), which is the larger 
 
 Selection Sort Algorithm is a simple algorithm that is an in-place executing comparison algorithm. It executes by dividing an array into two sub-arrays. One sub-array is the sorted array which is at the left end and the other sub-array is the unsorted array at the right end. Initially the sorted array is an empty array and the unsorted array is the whole of the main array. The algorithm then runs through the unsorted array finding the smallest element from it, then putting it at the beginning of the sorted sub-array. It iterates until all elements are in the sorted array, and each iteration starts at the beginning index of the unsorted array. 
 
-Whilst this is a simple style algorithm, it would not be the most efficient particular for large data input. As there are two loops, the worst case complexity is quadratic Ο(n2 ), which is the larger the input data, the larger the steps. This can occur if the we are wanting to sort the data in ascending order and the main array is already in descending order. An example of Ruby code for this Algorithm is below.
+Whilst this is a simple style algorithm, it would not be the most efficient particular for large data input. As there are two loops, the worst case complexity is quadratic Ο(n2 ), which is the larger the input data, the larger the steps. This can occur if the we are wanting to sort the data in ascending order and the main array is already in descending order. 
+
+An example code snippet is below:
 
 
         def selection_sort(arr)
@@ -482,6 +486,8 @@ This is a method that checks each value in an array and counts the amount of tim
 
 Linear search is clearly a basic and simple algorithm; however, this also means it is not the most optimal performing nor efficient algorithm. As shown in the example below, in order for this method to execute, the elements in the array need to be checked individually. This means that as the size of the array of elements grows, so does steps and time taken to check how many times the target is in the array. This results in the time complexity for this algorithm to be O(n) or linear time.
 
+An example code snippet is below:
+
         def check_target (target)
         arr = [1, 2, 3, 5, 2, 8, 9, 2]
         count=0
@@ -505,6 +511,8 @@ A real-world comparison of a search like this could be using a dictionary to loo
 The time complexity of Binary Search is logarithmic time O(log n). Logarithmic growth means it is being divided. So, in the case of Binary Search it is log base 2 of the array collection. Binary Search is highly efficient as the number of steps to the size of the input collection ratio does decrease when the input collection increases.
 
 To summarize, it is clear Binary Search is more efficient in performance time compared to Linear Search as shown in the complexity. Some other notable comparisons are that Binary Search does require the input data to be sorted, whereas Linear does not. Binary Search data access is at random, whilst Linear access’ the data sequentially.
+
+An example code snippet is below:
 
 
     def binarysearch(arr, i)
@@ -539,6 +547,93 @@ To summarize, it is clear Binary Search is more efficient in performance time co
   - a. List and describe the software used by the app.
 
 ------
+
+As Depop is an application on the web, iOS and Android, it uses a selection of software components for each application component. A large portion of these being:
+
+### JavaScript- Web
+
+JavaScript is a lightweight dynamic programming language. It is an interpreted scripting language most commonly used for client-side web pages. User in conjunction with HTML and CSS it elevates websites from static to dynamic. Not to be confused with Java, as JavaScript does not need any compilation to run, it is automatic via a program called the JavaScript engine. All major web browsers have their own JavaScript engine too execute JavaScript’s.
+
+### Nginx- Web Server
+
+Nginx is an open-source web server, initially just utilised as a webserver, now with webserver, reverse proxy, cache and load balancing capabilities. Initially created to be the fastest webserver performance wise, it has held on to that reputation of high performance consistently beating other web servers in benchmark performance. Nginx operates with the concept of high concurrency whilst maintaining low memory, this is done via an asynchronous event-driven approach, which rather than individual threads utilised on each request, requests are processed via a single thread. This type of architecture has proven not just scalable and efficient as a webserver, but able to be utilised as handling aforementioned reverse proxy and load balancing for traffic management, also handling tasks such as SSL/TLS and caching management which might otherwise slow down a web server.
+
+### Node.js- Event Machine – JavaScript runtime
+
+Node.js is an open-source platform built on Chrome’s JavaScript runtime engine, enabling easily built, fast and scalable applications. It is a cross-platform runtime environment utilised for server-side development of network applications. Node.js allows for applications to be server-side with accessibility to file systems, operating systems and other components for fully functional applications. This being so because from its inception in 2009, it came into existence to enable JavaScript to not just be browser run, but also allowed to be run on a machine as standalone application. Some key features of Node.js is its asynchronous, event-driven input/output, its fast execution and its scalability.
+
+### React- Library- JavaScript
+
+React is an open-source JavaScript library for user interface building. Utilisation of React is done via components, being a component-based library. These components are described as self-contained modules which renders output. React components are written individually which then manage their own state, which then correspond to various elements of the user interface. These components then get composed to create the structure of the user interface. A key functionality of React is its ability to operate a virtual DOM, which instead of the DOM requiring a reload for every user interaction, React creates its own virtual DOM which it uses to analyse the components changed when a user event happens, which it then intern selectively updates that section in the actual DOM. This purpose of this process enables the reduction of computation power and loading time. 
+
+### Postgres and PostgreSQL- Database and Query Language
+
+PostgreSQL is one of the oldest open source database management system, PostgreSQL is one of the most advanced and runs on all major operating systems. This robust database has more than 30 years of active development, which has resulted in PostgreSQL earning a reputation of reliability, integrity and stability. PostgreSQL has many features which are designed to help application building by developers and to help the building of fault-tolerant environments by administrators which enables data integrity. PostgreSQL is a true open source. Offering enterprise grade performance and features for free, allowing the freedom to use, modify and implement it as needed. Due to the vastness of this database and its many years of experience and operation, coming with that is a large amount of documentation. Its dedicated community of supporters regularly contribute by finding bugs, providing fixes and updating. This ensures this DBMS keeps its reputation of robustness and security. It maintains the reputation of being high extensible, diversity of features, ACID compliant and maintaining conformance to a vast majority of the SQL compliance features. Whilst is maintains these good reputation components, it does lack efficient memory processes and also speed performance.
+
+### GraphQL- Query Language
+
+GraphQL is a query language utilised for API’s and a runtime for server-side queries. Initially developed by Facebook privately in 2012 as a new approach to data fetching, it then became open source in 2015. It is described as an alternative to REST, in which it has the ability to define required data structures, and GraphQL returning that specified data from the server, even from multiple sources using only a single request. This means GraphQL has the characteristics of easier specificity of data requirements, smooth aggregation of data even from multiple sources and also the functionality of using a type system which enables applications can only ask for available data and provides clear and helpful errors. This type system does mean that API maintainers do have the task of writing maintainable GraphQL schemas. 
+
+### Redux- State container for JavaScript Apps
+
+Redux is described as a state container for JavaScript applications, that is predictable, centralised and flexible. It is most popularly used along with React; however, it can be used with other JavaScript frameworks or libraries. As mentioned previously React operates via components and sharing these components to form a user interface, however with applications, particularly when they become very large, the management and the sharing of these state components can become tiresome. This is where a state management platform is key, whereby these components are housed in a parent component, and any methods of updating begin in the parent and are passed down props to the components. This is how Redux operates, by being a central store that holds the state of the entire application, with components being able to access the state stored. This can be in the form of fetching and storing data, data assignment and data changes. Redux also provide DevTools that can assist with tracing application state changes and which also provide helpful debugging capabilities. 
+
+### Scala- Web, Android
+
+Scala is a high-level concise programming language supporting both object-oriented programming and functional programming and seamlessly integrates both. Its qualities are conciseness, elegance and type-safe. A key advantage of Scala is the Scala code is intended to be complied to Java bytecode, which then means that result code can be transferred to a Java Virtual Machine for output generation. Scala can be interoperated along with Java, which means it is easy to use Java libraries with Scala and vice versa. Scala is a scalable language that is a core part of large data management. Scala takes precedence over Java as it was designed to eliminate any unnecessary code. Android programs can be written in Java, so since Scala is compatible with Java it can also suit Android Development. 
+
+### Java- Web, Android
+
+Java is a class-based, object-oriented programming language specifically designed for usage in the distributed environment of the internet. Its syntax design has the core of C and C++ but is much simpler and implements the OOP model. Java is a write once, run anywhere programming language, which is a key reason it its vast popularity since its original release in 1995. It offers portability in a network, since Java code gets compiled into Java bytecode which is able to run anywhere that has a Java Virtual Machine. Due to its portable nature, it can be used to create full applications either single server or distributed and it can also create small application modules call applet that can be used as part of a webpage, it also is popular with Android Developers. As mentioned before there is some critiques to do with Java being too verbose, which is the issues Scala addresses in simplification.
+
+### Objective-C- iOS
+
+Objective-C is a programming language for iOS development. It is described as a general purpose, object-orientated programming language with C programming language likeliness. It came about by taking the C programming language and adding Small Talk programming features, therefore enabling the language to become object oriented. Originally developed in the early 1980’s, then eventually calling Apple home, it became the main programming language for OS X and iOS along with subsequent Apple API’s, Cocoa and Cocoa Touch. 
+
+Like Ruby, Objective-C is based on the object-oriented approach to programming which includes the four components of this style of programming. These being encapsulation, inheritance, polymorphism and abstraction.
+
+Application building with Objective-C will involve working objects majority of the time, with these objects being instances of the Objective-C class. There is a portion of classes provided by Cocoa or Cocoa touch, however in programming most classes will be written personally. 
+
+### Swift- iOS
+
+Swift is programming language for iOS development. Released in 2014 by Apple, and made open source in 2015, Swift has the qualities of a fast growing yet simplified style complied programming language. It houses a combination of Objective-C aspects along with other programming languages, to create a fast, safe and highly extensible modern style language. The clean syntax encourages clean code that is less disposed to mistakes. The safe aspect of this language is features that lessen common programming errors, some features being variables initialised before use, automatic memory management, arrays and integers are checked for any overflow, nil objects not permitted, and the error handling aspects of Swift allow for controlled recovery. Another core aspect of Swift is the fast operation, the compilation technology is fast that is designed to use modern hardware to the fullest potential.
+
+In addition to the aforementioned software, there is other software that Depop uses according to Stackshare which I will list for reference. Those being Django, Python, Kotlin, Ruby and Typescript.
+
+
+[Reference 1](https://www.techrepublic.com/article/apples-swift-programming-language-the-smart-persons-guide/)
+[Reference 2](https://en.wikipedia.org/wiki/Objective-C)
+[Reference 3](https://www.tutorialspoint.com/objective_c/objective_c_overview.htm)
+[Reference 4](https://stackshare.io/depop/depop#team)
+[Reference 5](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
+[Reference 6](https://docs.swift.org/swift-book/)
+[Reference 7](https://www.itpro.co.uk/development/34417/what-is-the-swift-programming-language-and-why-should-i-learn-it)
+[Reference 8](https://developer.apple.com/swift/)
+[Reference 9](https://en.wikipedia.org/wiki/Scala_(programming_language)
+[Reference 10](https://www.edureka.co/blog/what-is-scala/)
+[Reference 11](https://docs.scala-lang.org/overviews/scala-book/prelude-taste-of-scala.html)
+[Reference 12](https://docs.scala-lang.org/tour/tour-of-scala.html)
+[Reference 13](https://en.wikipedia.org/wiki/Java_(programming_language))
+[Reference 14](https://www.theserverside.com/definition/Java)
+[Reference 15](https://codeinstitute.net/blog/what-is-java/)
+[Reference 16](https://www.tutorialspoint.com/javascript/javascript_overview.htm)
+[Reference 17](https://javascript.info/intro)
+[Reference 18](https://www.nginx.com/resources/glossary/nginx/)
+[Reference 19](https://kinsta.com/knowledgebase/what-is-nginx/)
+[Reference 20](https://www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/)
+[Reference 21](https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm)
+[Reference 22](https://www.codecademy.com/articles/what-is-node)
+[Reference 23](https://www.newline.co/fullstack-react/30-days-of-react/day-1/)
+[Reference 24](https://reactjs.org/)
+[Reference 25](https://skillcrush.com/blog/what-is-react-js/)
+[Reference 26](https://www.postgresql.org/about/)
+[Reference 27](https://graphql.org/)
+[Reference 28](https://www.redhat.com/en/topics/api/what-is-graphql)
+[Reference 29](https://www.freecodecamp.org/news/so-whats-this-graphql-thing-i-keep-hearing-about-baf4d36c20cf/)
+[Reference 30](https://www.smashingmagazine.com/2018/07/redux-designers-guide/)
+[Reference 31](https://redux.js.org/)
+[Reference 32](https://blog.logrocket.com/why-use-redux-reasons-with-clear-examples-d21bffd5835/)
+
 
 
   - b. Describe the hardware used to host the app.
