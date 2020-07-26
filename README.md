@@ -785,7 +785,7 @@ Categories has_many mens_wear
 
 
 
-![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.png "ERD")
+![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.pdf "ERD")
 
 
 ----
