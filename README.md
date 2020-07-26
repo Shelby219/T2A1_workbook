@@ -544,7 +544,7 @@ An example code snippet is below:
 
 ## Q14 Conduct research into a marketplace website (app) and answer the following parts:  
 
-  - a. List and describe the software used by the app.
+## - a. List and describe the software used by the app.
 
 ------
 
@@ -636,7 +636,7 @@ In addition to the aforementioned software, there is other software that Depop u
 
 
 
-  - b. Describe the hardware used to host the app.
+##  - b. Describe the hardware used to host the app.
 
 In about mid 2018 Depop completed a large project to move multiple key components of their largest application to AWS from Heroku, this was described as paving the way for the next generation of their platform. Whilst certain components remain on other infrastructure like Heroku, the following is the components used in this new ecosystem for the main application in AWS:
 
@@ -703,7 +703,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 ------
 
-  - c. Describe the interaction of technologies within the app
+##  - c. Describe the interaction of technologies within the app
 
 
 
@@ -711,7 +711,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 ------
 
-  - d. Describe the way data is structured within the app
+## - d. Describe the way data is structured within the app
 
 
 
@@ -719,20 +719,64 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 ------
 
-  - e. Identify entities which must be tracked by the app
+## - e. Identify entities which must be tracked by the app
 
+Users
+  Buyers
+  Sellers
+   Followers
+   Comments
+   Reviews
+Items
+  Sizes
+  Brands
+  Delivery
+  Categories
+    Sub categories
+    Mens wear 
+    Womens ear
 
 
 
 ------
 
-  - f. Identify the relationships and associations between the entities you have identified in part (e)
+##  - f. Identify the relationships and associations between the entities you have identified in part (e)
 
 
+User has_many user_followers
+User has_one seller
+User has_and_belongs_to_many followers
 
 
+Seller belongs_to user
+Seller has_many items
+Seller has_many reviews
 
+Buyer has_many items
+Buyer has_many reviews
+Buyer has_one shopping bag
 
+Review belongs_to one seller
+Review belongs_to one buyer
+
+Shopping_bag has_many seller_items
+Shopping_bag belongs_to one buyer
+
+Followers has_and_belongs_to_many users
+
+Item belongs_to seller
+Item belongs_to buyer optional true
+Item has_many sizes
+Item has_many brands
+Item has_many delivery types
+Item has_many categories
+Item has_many comments through user
+
+Comment belong_to one user
+
+Categories has_many other_sub_categories
+Categories has_many womens_wear
+Categories has_many mens_wear
 
 
 ------
