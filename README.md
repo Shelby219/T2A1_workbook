@@ -784,7 +784,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 
 
-![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.pdf)
+![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.png)
 
 
 ----
