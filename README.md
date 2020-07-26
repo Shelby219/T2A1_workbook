@@ -609,7 +609,7 @@ In addition to the aforementioned software, there is other software that Depop u
 [Reference 6](https://docs.swift.org/swift-book/)
 [Reference 7](https://www.itpro.co.uk/development/34417/what-is-the-swift-programming-language-and-why-should-i-learn-it)
 [Reference 8](https://developer.apple.com/swift/)
-[Reference 9](https://en.wikipedia.org/wiki/Scala_(programming_language)
+[Reference 9](https://en.wikipedia.org/wiki/Scala_(programming_language))
 [Reference 10](https://www.edureka.co/blog/what-is-scala/)
 [Reference 11](https://docs.scala-lang.org/overviews/scala-book/prelude-taste-of-scala.html)
 [Reference 12](https://docs.scala-lang.org/tour/tour-of-scala.html)
