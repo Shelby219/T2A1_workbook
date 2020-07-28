@@ -1,3 +1,6 @@
+ ##EXAMPLES
+
+
 ##LINEAR SEARCH EXAMPLE
 
 def linear_search (value)
