@@ -544,7 +544,7 @@ An example code snippet is below:
 
 ## Q14 Conduct research into a marketplace website (app) and answer the following parts:  
 
-## - a. List and describe the software used by the app.
+## A. List and describe the software used by the app.
 
 ------
 
@@ -636,7 +636,7 @@ In addition to the aforementioned software, there is other software that Depop u
 
 
 
-##  - b. Describe the hardware used to host the app.
+##  B. Describe the hardware used to host the app.
 
 In about mid 2018 Depop completed a large project to move multiple key components of their largest application to AWS from Heroku, this was described as paving the way for the next generation of their platform. Whilst certain components remain on other infrastructure like Heroku, the following is the components used in this new ecosystem for the main application in AWS:
 
@@ -703,7 +703,7 @@ With applications housing many API keys, credentials and secrets with safe acces
 
 ------
 
-##  - c. Describe the interaction of technologies within the app
+##  C. Describe the interaction of technologies within the app
 
 
 Depop being a global web and smart phone application, means it does use quite a plethora of various software and hardware as shown by Stack Share. This being said, the aforementioned software and hardware highlighted does have clear relations and interactions.
@@ -720,15 +720,28 @@ Along with their web application, their core application is via smart phone, iOS
 
 ------
 
-## - d. Describe the way data is structured within the app
+## D. Describe the way data is structured within the app
 
+Depop being a two-sided marketplace application, the main structure of this application would be two groups, these being the buyers and sellers. Both of these falling under the main user which gets created before even access to the application is allowed. Under user comes entering in the main fields of username, email, password, first name, last name and country. Username being the main field of use as this is how you are able to follow, like and recognise other users, this comes under the social media aspect of this application. 
+
+Now sellers require large following of buyers, and buyers want a plethora of sellers. As the application operates as a social based fashion app, this explains why a user account must be created before usage of the application. Which then enables to use to buy and seller straight away with ease. Almost encourage the user to buy, as opposed to just scrolling through listings not logged into an account. 
+
+Once an account has been made and the user is logged in then they are welcomed with a main home page highlighting some key sellers to view, otherwise the main tab is the search tab. This is how to user can search for any item, brand, style etc they would like. Once a search has been made the interface display any items matching this search. 
+
+When it comes to wanting to sell items, there entities under an item listing are the description, location, price, category, subcategory, brand, delivery option and price and size. All of these play an important role in users being able to search for items they wish to purchase. The description enables the user to list any tags and references for the item, which then get referenced in being able to search. This goes for category, subcategory and brand, these being key references in the search engine. Once the items are listed the users are able to like and leave comments on these listings.
+
+Users can also follow other users, which explains the nature of the application also having a social media aspect to it. It is about buying and selling fashion, but also setting trends and getting fashion inspiration from other users. Once transactions have been made the users as a buyer or seller can leave reviews on the corresponding buyer or seller. This rating is an important factor on a user’s profile, especially when a user might be operating the application as a business, these reviews play an important part in attracting customers. 
+
+A recent change in the way Depop operates a user shopping bag and now items can be added to a user shopping bag, and then they are group by user in which purchases can now be made in bulk when from the same user seller. Previously purchases were only made individually on items regardless if from the same seller. The bag groups items by seller and tallies the item quantity and total price. This means a smoother shopping experience for users wanting to purchase, as this can save on shipping costs and also promotes a smoother user experience. 
+
+In summary Depop growing success clearly reflects the popularity of the application, additionally the overall user experience of the application. It promotes very simple and straightforward buying and selling and also a very community focused social nature.
 
 
 
 
 ------
 
-## - e. Identify entities which must be tracked by the app
+## E. Identify entities which must be tracked by the app
 
 - Users
   - Buyers
@@ -747,7 +760,7 @@ Along with their web application, their core application is via smart phone, iOS
 
 ------
 
-##  - f. Identify the relationships and associations between the entities you have identified in part (e)
+##  F. Identify the relationships and associations between the entities you have identified in part (e)
 
 - User has_many user_followers
 - User has_one seller
@@ -786,7 +799,7 @@ Along with their web application, their core application is via smart phone, iOS
 
 ------
 
-##  - g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
+##  G. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 ![ERD](https://github.com/Shelby219/T2A1_workbook/blob/master/docs/T2A1_Depop%20ERD.png)
 
